@@ -31,8 +31,6 @@
             struct a2v {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
-                //和法线方向normal不同，tangent的类型是float4，而非float3，这是因为我们需要使用tangent.w分量来决定切线空间中的第三个坐标轴——副切线的方向性。 
-                float4 texcoord : TEXCOORD0;
             };
             struct v2f {
                 float4 pos : SV_POSITION;
